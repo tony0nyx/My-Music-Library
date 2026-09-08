@@ -3,7 +3,28 @@
     margin: 0;
     padding: 0;
 }
+.elements_con{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 
-.my_table, th , td{
-    border: 2px solid magenta;
 }
+
+
+table{
+    width: 80%;
+    height: 10%;
+}
+.my_table, th , td{
+    border: 2px solid black;
+    margin: 2.1em;
+    border-collapse: collapse ;
+
+}
+
+th, td{
+    padding: 1.2em;
+}
+

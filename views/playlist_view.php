@@ -10,23 +10,27 @@
 
 </head>
 <body>
+<div class="elements_con">
 
-<!--===============================-->
-<table class="my_table">
-    
-    <tr>
+    <!--===============================-->
+    <table class="my_table">
 
-        <th> Name </th>
-        <th> Artist Name </th>
-        <th> Genre </th>
-        <th> Release date </th>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
+        <tr>
+
+            <th> Name </th>
+            <th> Artist Name </th>
+            <th> Genre </th>
+            <th> Release date </th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+
 </body>
 </html>
