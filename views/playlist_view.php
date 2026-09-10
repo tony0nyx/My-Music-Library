@@ -11,24 +11,42 @@
 </head>
 <body>
 <div class="elements_con">
-
+    <h1 class="header_tx"> Overview </h1>
     <!--===============================-->
-    <table class="my_table">
+    <?php
+    if ($result_count > 0) { ?>
 
-        <tr>
+        <table class="my_table">
 
-            <th> Name </th>
-            <th> Artist Name </th>
-            <th> Genre </th>
-            <th> Release date </th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+            <tr>
+                <th> Name </th>
+                <th> Artist Name </th>
+                <th> Genre </th>
+                <th> Release date </th>
+                <th>Action</th>
+            </tr>
+
+            <?php foreach ($result as $row) { ?>
+                <tr>
+                    <td><?= $row['name'] ?></td>
+                    <td><?= $row['artistname'] ?></td>
+                    <td><?= $row['genre'] ?></td>
+                    <td><?= $row['release_date'] ?></td>
+                    <td>
+                        <a href= "./views/detail_view.php?ID=<?=$row['ID'] ?>"> Details </a>
+                        - coming soon
+                    </td>
+                </tr>
+                <?php
+            } ?>
+        </table>
+
+    <?php } else { ?>
+
+        <p> Log not found </p>
+    <?php }
+    ?>
+
 
 </div>
 

@@ -7,24 +7,29 @@
     width: 100dvw;
     height: 100dvh;
     display: flex;
-    justify-content: center;
-    align-content: center;
-
+    align-items: center;
+    flex-direction: column;
 }
 
+.header_tx{
+    margin-top: 1em;
+    color: rebeccapurple;
+}
 
 table{
     width: 80%;
     height: 10%;
 }
 .my_table, th , td{
-    border: 2px solid black;
+    border: black 1px solid;
     margin: 2.1em;
-    border-collapse: collapse ;
 
 }
 
 th, td{
-    padding: 1.2em;
+    padding: 10px;
 }
 
+td{
+    text-align: left;
+}
