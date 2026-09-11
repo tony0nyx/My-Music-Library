@@ -1,7 +1,7 @@
 <?php
 require '../connection_db/config.php';
 require_once "../snippets/error_report.php";
-include "../views/detail_view.php";
+
 
 $ID = $_GET['ID'];
 
@@ -10,6 +10,8 @@ try {
     $stmt = $pdo->prepare($query);
     $stmt-> bindParam(':ID', $ID);
     $stmt->execute();
+
+    include __DIR__. "/views/detail_view.php";
 
 } catch (PDOException $e) {
     echo "There was an error getting playlist details. " . $e->getMessage();
