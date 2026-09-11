@@ -16,6 +16,7 @@
     <?php
     if ($result_count > 0) { ?>
 
+    <br><br>
         <table class="my_table">
 
             <tr>
