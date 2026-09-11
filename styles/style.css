@@ -7,9 +7,11 @@
 /* header font */
 @font-face {
     font-family: "Chernobly";
-    src: url(Chernobyl.otf);
+    /*src: url(Chernobyl.otf);*/
 }
+/* 0-= */
 .elements_con{
+    background-image: linear-gradient(to right, #915412 , #E6942F);
     width: 100dvw;
     height: 100dvh;
     display: flex;
@@ -18,14 +20,15 @@
 }
 
 .header_tx{
-    font-family: "Chernobly";
+    /*font-family: "Chernobly";*/
     margin-top: 1em;
-    color: rebeccapurple;
+    color: #130000;
 }
 
 table{
     width: 80%;
     height: 10%;
+    border-collapse: collapse;
 }
 .my_table, th , td{
     border: black 1px solid;
