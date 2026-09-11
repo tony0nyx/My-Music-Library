@@ -34,8 +34,8 @@
                     <td><?= $row['release_date'] ?></td>
                     <td>
                         <a href= "./views/detail_view.php?ID=<?=$row['ID'] ?>"> Details </a>
-                        <a href="../pages/addFrom.php"> + </a>
-                        - coming soon
+                        <a href="../pages/addFrom.php?ID=<?=$row['ID'] ?>"> Add </a>
+                        <a href= "./views/delete_view.php?ID=<?=$row['ID'] ?>"> Delete </a>
                     </td>
                 </tr>
                 <?php
@@ -48,7 +48,7 @@
     <?php }
     ?>
 
-
+<!--sheer-->
 </div>
 
 </body>
